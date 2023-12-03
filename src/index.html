@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de tareas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="container">
+        <header>
+            <h1>Lista de tareas</h1>
+        </header>
+        <main class="tareas">
+            <section id="tareas-lista">
+                <article id="task-list"></article>
+            </section>
+            <section id="tareas-manejo">
+                <div>
+                    <input type="text" id="task-input" placeholder="Escribe la tarea">
+                </div>
+                <div>
+                    <input type="text" id="task-done-input" placeholder="Id tarea hecha">
+                </div>
+                <div>
+                    <button onclick="addTask()">Agregar tarea</button>
+                </div>
+                <div>
+                    <button onclick="taskDone()">Marcar como hecha</button>
+                </div>
+                
+                <script src="../dist/app2.js"></script>
+            </section>
+            <figure id="tareas-imagen">
+                <img id="imagen-astro" src="https://cdn.pixabay.com/photo/2023/06/13/15/05/astronaut-8061095_1280.png" alt="Astronauta espacial">
+            </figure>
+            
+        </main>
+        
+    </body>
+</html>

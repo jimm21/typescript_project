@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Task_1 = require("./models/Task");
+const TaskServices_1 = require("./services/TaskServices");
+let tarea1 = new Task_1.Tarea({ id: 1, description: "Hacer la compra", completed: false });
+let tarea2 = new Task_1.Tarea({ id: 2, description: "Preparar la presentación", completed: false });
+const servicioTareas = new TaskServices_1.TaskServices();
+servicioTareas.addTarea(tarea1);
+servicioTareas.addTarea(tarea2);
+servicioTareas.showTareas();
+servicioTareas.completarTarea(1);
