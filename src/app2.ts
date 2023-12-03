@@ -33,7 +33,6 @@ class TaskManager <T extends Task> {
     doneTask(taskId: number): void {
         const task = this.tasks.find((task: T) => task.id === taskId);
         if (task) {
-            const taskListElement = document.getElementById("task-list");
             task.completed = true;
             this.displayTask();
         }
